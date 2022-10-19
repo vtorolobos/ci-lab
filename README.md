@@ -37,7 +37,7 @@ jobs:
 - Luego reemplaza `package` por `verify`
 - Modifica los tests para que fallen y haz un push
 - Modifica los tests para que pasen y haz un push
-- Crea un token clasic en tu configuración personal
+- Crea un token clasic en tu configuración personal, asegurate que tenga permisos para write/delete packages. (El token clasic se crea en `Settings/Developer Settings`)
 - Crea los secrets USER y TOKEN en el repo
 - Revisa en contenido de settings.xml en la carpeta .m2
 - Modifica el archivo `maven-publish.yml` y déjalo así:
