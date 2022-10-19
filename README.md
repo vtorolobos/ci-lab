@@ -33,8 +33,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml # or verify
 ```
-
+- Haz un push en tu repo para gatillar el action (modifica un archivo por ejemplo si estás usando GitHub directamente)
 - Luego reemplaza `package` por `verify`
+- Modifica los tests para que fallen y haz un push
+- Modifica los tests para que pasen y haz un push
 - Crea un token clasic en tu configuración personal
 - Crea los secrets USER y TOKEN en el repo
 - Revisa en contenido de settings.xml en la carpeta .m2
@@ -83,3 +85,6 @@ jobs:
       env:
          GITHUB_TOKEN: ${{ github.token }}
 
+```
+
+IMPORTANTE: recuerda modificar las referencias a los repos en los archivos maven
